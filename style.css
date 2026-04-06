@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.banner{
+    display:flex;
+    justify-content: center;
+    background-image: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),url("bck.jpg");
+    height:100vh;
+    width:100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+
+}
+a{
+    text-decoration: none;
+    color:white;
+
+}
+    
+.navbar{
+    width:80vw;
+    margin:20px;
+    color:white;
+    height:60px;
+    padding:10px 25px;
+    background: transparent;
+    cursor:pointer;
+    position:absolute;
+    backdrop-filter: blur(30px);
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px #111,
+                -5px -5px 10px #070707;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    list-style: none;
+    gap:35px;
+    text-transform: uppercase;
+    font-size:1rem;
+    position:relative;
+    z-index: 1;
+}
+
+.logo{
+    margin-right: auto;
+    font-size: 30px;
+    font-weight: 1000;
+}
+
+
+.hero-head{
+    position:absolute;
+    top:40%;
+    font-size:30px;
+    color:white;
+    line-height:1;
+    text-align: center;
+    font-weight: 1000;
+}
+.hero-para{
+    font-size: 18px;
+    text-align: center;
+    line-height: 1;
+    padding: 9px;
+    font-weight: normal;
+    
+}
+
+.hero-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:25px;
+    margin:20px;
+
+}
+.hero-btn button{
+   padding: 20px 4px;
+   width:20vw;
+   text-align: center;
+   border-radius: 25px;
+   border:1px solid white;
+   background: transparent;
+   color:white;
+   font-size:15px;
+    transition: all 0.6s ease;
+   
+ 
+}
+.hero-btn button:hover{
+   background-color:floralwhite;
+   border:1px solid black;
+   color:black;
+   cursor:pointer;
+}
+
+
+
+ 
+                

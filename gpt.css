@@ -1,0 +1,233 @@
+*{
+padding:0;
+margin:0;
+box-sizing:border-box;
+font-family:sans-serif;
+}
+
+body{
+overflow-x:hidden;
+}
+
+.banner{
+display:flex;
+justify-content:center;
+align-items:center;
+
+min-height:100vh;
+width:100%;
+
+background-image:
+linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+url("bck.jpg");
+
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+/* LINKS */
+
+a{
+text-decoration:none;
+color:white;
+}
+
+
+/* NAVBAR */
+
+.navbar{
+width:90%;
+max-width:1200px;
+height:60px;
+
+margin:20px auto;
+color:white;
+
+padding:12px 25px;
+
+background:transparent;
+position:absolute;
+top:10px;
+
+backdrop-filter:blur(20px);
+border-radius:25px;
+
+box-shadow:5px 5px 10px #111,
+           -5px -5px 10px #070707;
+}
+
+.navbar ul{
+display:flex;
+align-items:center;
+justify-content:center;
+flex-wrap:wrap;
+
+list-style:none;
+gap:25px;
+
+text-transform:uppercase;
+font-size:15px;
+}
+
+.logo{
+margin-right:auto;
+font-size:26px;
+font-weight:900;
+}
+
+.navbar ul li{
+    position: relative;
+    padding:4px 15px;
+    transition: color 0.4s ease;
+    z-index: 1;
+}
+
+/* background layer */
+
+.navbar ul li::before{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:0%;
+    height:100%;
+    background:rgba(255,255,255,0.2);
+    border-radius:20px;
+    transition:width 0.4s ease;
+    z-index:-1;
+}
+
+/* hover */
+
+.navbar ul li:hover::before{
+    width:100%;
+}
+
+.navbar ul li:hover{
+    color:#fff;
+    cursor:pointer;
+}
+
+
+
+/* HERO SECTION */
+
+.hero-head{
+max-width:900px;
+
+position:absolute;
+top:50%;
+left:50%;
+
+transform:translate(-50%,-50%);
+
+font-size:30px;
+color:white;
+
+text-align:center;
+padding:20px;
+margin:15px;
+}
+
+.hero-para{
+font-size:18px;
+text-align:center;
+line-height:1.6;
+padding:10px;
+font-weight:normal;
+}
+
+
+/* BUTTONS */
+
+.hero-btn{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:20px;
+margin-top:25px;
+flex-wrap:wrap;
+}
+
+.hero-btn button{
+
+padding:14px 30px;
+
+min-width:160px;
+
+border-radius:25px;
+border:1px solid white;
+
+background:transparent;
+color:white;
+
+font-size:15px;
+
+transition:0.4s;
+}
+
+.hero-btn button:hover{
+background-color:white;
+border:1px solid black;
+color:black;
+cursor:pointer;
+}
+
+
+/* ---------------- */
+/* TABLET */
+/* ---------------- */
+
+@media(max-width:900px){
+
+.hero-head{
+font-size:24px;
+}
+
+.hero-para{
+font-size:16px;
+}
+
+.navbar ul{
+gap:18px;
+}
+
+}
+
+
+/* ---------------- */
+/* MOBILE */
+/* ---------------- */
+
+@media(max-width:600px){
+
+.navbar{
+padding:12px;
+}
+
+.navbar ul{
+flex-direction:column;
+gap:10px;
+}
+
+.logo{
+margin-right:0;
+font-size:22px;
+}
+
+.hero-head{
+font-size:20px;
+width:90%;
+margin-top:20px;
+}
+
+.hero-para{
+font-size:14px;
+}
+
+.hero-btn button{
+width:140px;
+}
+
+}
