@@ -29,3 +29,10 @@ document.querySelector(".container").after(div);   // add after container.
 let str=document.querySelector(".container");
 str.insertAdjacentHTML("beforebegin","<h1>hi i am html string </h1>");
 
+
+
+const funct=(a,b)=>{
+    console.log(a+b)
+}
+funct(21,21);
+funct(21,33);funct(91,21);funct(981,21);funct(44,21);
