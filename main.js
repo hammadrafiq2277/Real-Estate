@@ -17,6 +17,8 @@
 // document.querySelector(".container").classList.toggle("carton")
 // true
 
+                                /* DOM MANUPULATION*/
+
 
 let div=document.createElement("div");
 div.setAttribute("class","snd-box");
@@ -36,3 +38,8 @@ const funct=(a,b)=>{
 }
 funct(21,21);
 funct(21,33);funct(91,21);funct(981,21);funct(44,21);
+
+let span=document.createElement("span");
+span.setAttribute("id","first-id");
+span.innerHTML="<h4>This is a span tag</h4>";
+document.querySelector(".container").append(span);
