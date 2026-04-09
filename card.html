@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color:white;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card{
+        display:flex;
+        border:2px solid white;
+        width:1000px;
+        justify-content: center;
+        align-items: center;
+        padding: 12px;
+        margin:7px;
+        border-radius:10px;
+        
+    }
+    .image img{
+        width:200px;
+    }
+    .text h1,p{
+        padding:2px 7px;
+        text-align: center;
+    }
+    .image{
+        position:relative
+    }
+    .capsule{
+        position:absolute;
+        bottom:0;
+        right:2px;
+        color:white;
+        background-color: black;
+        border-radius: 2px;
+        font-size:13px;
+        z-index:10;
+        padding:2px;
+        opacity:0.9;
+    }
+    
+</style>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image"><img src="https://i.ytimg.com/vi/gRLdHSabW3o/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLBOkIyACIrUQH4WItgmM-x89Ebw2Q" alt="">
+            <div class="capsule">27:43</div>
+            </div>
+            <div class="text">
+                <h1>Introduction to Backend | Sigma Web Dev vid# 02</h1>
+                <p>CodewithHarry . 727K views . 2 months ago</p>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="card.js"></script>
+</body>
+</html>
