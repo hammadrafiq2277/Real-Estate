@@ -40,6 +40,8 @@ createCard("Introduction to Backend | Sigma Web Dev vid# 02","CodewithHarry",72,
     "https://i.ytimg.com/vi/gRLdHSabW3o/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLBOkIyACIrUQH4WItgmM-x89Ebw2Q"
 )
 
-createCard("Introduction to Django | Sigma Web Dev vid# 54","CodewithHarry",6000,3,"39:53","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVyj5zbW_1qQ4rUw0KzObyXV4d_oNXaSYXCQ&s"
+createCard("Introduction to Django | Sigma Web Dev vid# 54","CodewithHarry",6000,3,"39:53","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVyj5zbW_1qQ4rUw0KzObyXV4d_oNXaSYXCQ&s")
+
+createCard("Introduction to WordPress | Sigma Web Dev vid# 04","CodewithHarry",68430000,3,"09:53","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVyj5zbW_1qQ4rUw0KzObyXV4d_oNXaSYXCQ&s"
 
 )
