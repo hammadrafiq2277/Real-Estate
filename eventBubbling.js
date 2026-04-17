@@ -12,22 +12,22 @@
 
 
         function getRandomColor(){
-            let v1=Math.ceil(0 + Math.random()*255);
-            let v2=Math.ceil(0 + Math.random()*255);
-            let v3=Math.ceil(0 + Math.random()*255);
-            return `rgb(${v1},${v2},${v3})`
+            let v1=Math.ceil(0 + Math.random() *255);
+            let v2=Math.ceil(0 + Math.random() *255);
+            let v3=Math.ceil(0 + Math.random() *255);
+            return `rgb( ${v1} , ${v2} , ${v3} )`
         }
 
         setInterval(() => {
             document.querySelector(".container").style.backgroundColor = getRandomColor()
-        }, 1000);
+        }, 200);
 
         setInterval(() => {
             document.querySelector(".childcontainer").style.backgroundColor = getRandomColor()
             
-        }, 1000);
+        }, 200);
 
         setInterval(() => {
             document.querySelector(".gchildcontainer").style.backgroundColor = getRandomColor()
             
-        }, 1000);
+        }, 200);
